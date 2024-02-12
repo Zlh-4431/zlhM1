@@ -8,13 +8,28 @@ h1 {
     text-align: center;
 }
 
-#mainSubject {
+.subject {
     height: 100px;
     width: 100px;
-    background-color: deepskyblue;
     position: absolute;
+}
+
+#mainSubject {
+    background-color: deepskyblue;
     bottom: 200px;
     left: 450px;
+}
+
+#box {
+    background-color: darkcyan;
+    bottom: 300px;
+    left: 450px;
+}
+
+#target {
+    background-color: brown;
+    bottom: 400px;
+    left: 750px;
 }
 
 button {

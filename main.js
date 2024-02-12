@@ -1,7 +1,6 @@
 const p1 = document.getElementById("p1");
 const h1 = document.getElementById("h1");
 const butt = document.getElementById("butt");
-const buttMove = document.getElementsByClassName("move")
 const mainSubject = document.getElementById("mainSubject");
 const butt1 = document.getElementById("butt1");
 const butt2 = document.getElementById("butt2");
