@@ -1,6 +1,16 @@
 const p1 = document.getElementById("p1");
 const h1 = document.getElementById("h1");
 const butt = document.getElementById("butt");
+const buttMove = document.getElementsByClassName("move")
+const mainSubject = document.getElementById("mainSubject");
+const butt1 = document.getElementById("butt1");
+const butt2 = document.getElementById("butt2");
+const butt3 = document.getElementById("butt3");
+const butt4 = document.getElementById("butt4");
+
+let buttId;
+let hi1, li1;
+let input1 = document.getElementById("input1");
 
 function getRandomInt(min, max) {
     const minCeiled = Math.ceil(min);
@@ -15,3 +25,78 @@ function random() {
 butt.addEventListener("click", () => {
     random()
 });
+
+
+let hi = 200;
+let li = 450;
+hi1 = hi + "px";
+li1 = li + "px";
+mainSubject.style.bottom = hi1;
+mainSubject.style.left = li1;
+
+function upB() {
+    hi = hi + 100;
+}
+
+function downB() {
+    hi = hi - 100;
+}
+
+function leftB() {
+    li = li - 100;
+}
+
+function rightB() {
+    li = li + 100;
+}
+
+function reC() {
+    hi1 = hi + "px";
+    li1 = li + "px";
+    mainSubject.style.bottom = hi1;
+    mainSubject.style.left = li1;
+}
+
+function moveContrl(event) {
+    if (event.key === "w" && hi < 600) {
+        upB();
+    } else if (event.key === "s" && hi > 200) {
+        downB();
+    } else if (event.key === "a" && li > 450) {
+        leftB();
+    } else if (event.key === "d" && li < 1200) {
+        rightB();
+    }
+    reC();
+}
+
+
+document.addEventListener("keydown", function (event) {
+    p1.innerHTML = event.key;
+    moveContrl(event);
+})
+
+butt1.addEventListener("click", function () {
+    if (hi < 600) {
+        upB();
+    }
+    reC();
+})
+butt2.addEventListener("click", function () {
+    if (hi > 200) {
+        downB();
+    }
+    reC();
+})
+butt3.addEventListener("click", function () {
+    if (li > 450) {
+        leftB();
+    }
+    reC();
+})
+butt4.addEventListener("click", function () {
+    if (li < 1200) {
+        rightB();
+    }
+    reC();
+})
