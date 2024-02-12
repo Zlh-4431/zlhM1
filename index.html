@@ -3,38 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <style>
-        h1 {
-    color: deepskyblue;
-    text-align: center;
-    }
-
-    #butt {
-        font-size: xx-large;
-        height: 150px;
-        width: 250px;
-    }
-    </style>
+    <link rel="stylesheet" type="text/css" href="a.css">
 </head>
 <body>
     <h1 id="h1">hello</h1>
     <p id="p1"></p>
     <button id="butt">new</button>
-    <script>
-        const p1 = document.getElementById("p1");
-        const h1 = document.getElementById("h1");
-        const butt = document.getElementById("butt");
-        
-        function getRandomInt(min, max) {
-            const minCeiled = Math.ceil(min);
-            const maxFloored = Math.floor(max);
-            return Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled); // 不包含最大值，包含最小值
-        }
-        
-        function random() {
-            p1.innerHTML = getRandomInt(1,101);
-        }
-        
-        butt.addEventListener("click", ()=>{random()});
-    </script>
+    <button id="butt2">up</button>
+    <button id="butt3">down</button>
+    <button id="butt4">left</button>
+    <button id="butt5">right</button>
+    <table id="tab">
+        <tr>a</tr>
+        <tr>b</tr>
+        <tr>c</tr>
+        <tr>d</tr>
+    </table>
+    <img src="OIP-C.jpg" alt="">
+    <script src="main.js"></script>
 </body>
+</html>

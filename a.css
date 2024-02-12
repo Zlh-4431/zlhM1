@@ -1,0 +1,52 @@
+html,body {
+    height: 100%;
+    margin: 0;
+}
+
+h1 {
+    color: deepskyblue;
+    text-align: center;
+}
+
+button {
+    display: block;
+    font-size: xx-large;
+    text-align: center;
+    height: 150px;
+    width: 150px;
+}
+
+#butt{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: 0px;
+}
+
+#butt2{
+    position: fixed;
+    bottom: 0;
+    left: 150px;
+    top: 0px;
+}
+
+#butt3{
+    position: fixed;
+    bottom: 0;
+    left: 150px;
+    top: 150px;
+}
+
+#butt4{
+    position: fixed;
+    bottom: 0;
+    left: 0px;
+    top: 150px;
+}
+
+#butt5{
+    position: fixed;
+    bottom: 0;
+    left: 300px;
+    top: 150px;
+}
